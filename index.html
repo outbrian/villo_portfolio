@@ -7,63 +7,118 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
-  <div class="logo">Cris Brian Villo</div>
+  <div class="logo">Portfolio</div>
   <nav>
     <button class="nav-btn active" data-page="home">Home</button>
     <button class="nav-btn" data-page="about">About</button>
-     <button class="nav-btn" data-page="gallery">Gallery</button>
+    <button class="nav-btn" data-page="gallery">Gallery</button>
     <button class="nav-btn" data-page="contact">Contact</button>
   </nav>
 </header>
-
 <main>
-
-
   <section class="page active" id="home">
-    <h1>Hi, I'm Cris Brian Villo</h1>
-    <p class="tagline">Welcome to my simple portfolio site.</p>
-    <button class="btn" data-goto="contact">Contact Me</button>
+    <div class="hero">
+      <div class="hero-text">
+        <span class="badge">Available for opportunities</span>
+        <h1>Hi, I'm Cris Brian Villo <span class="wave">👋</span></h1>
+        <div class="hero-actions">
+          <button class="btn" data-goto="gallery">Explore Work</button>
+          <button class="btn btn-outline" data-goto="contact">Let's Talk</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit-ring ring2"></div>
+        <div class="orbit-ring"></div>
+        <div class="blob"></div>
+        <div class="photo-frame">
+          <img src="Hobbit2.jpg" alt="Cris Brian Villo">
+        </div>
+             </div>
+    </div>
   </section>
 
   <section class="page" id="about">
     <h2>About Me</h2>
     <p class="about-text">
-   Hi i'm Cris Brian B. Villo a Bachelor of Science in Information Technology (BSIT) student at Central Philippines State University San Carlos Campus.
-   I study HTML, how the internet works, and how humans interact with computers.
-   
+      Hi, I'm Cris Brian B. Villo, a Bachelor of Science in Information Technology (BSIT)
+      student at Central Philippines State University, San Carlos Campus. I study HTML,
+      how the internet works, and how humans interact with computers.
     </p>
- </section>
-  
-<section class="page" id="gallery">
-  <h3>Gallery</h3>
-  <p class="contact-sub">Favorite place in New Zealand.</p>
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="picture 1.jpg" alt="Favorite place 1">
-      <p>Hobbiton, Matamata</p>
-      <p>The Hobbit movies</p>
+    
+
+    <div class="skills-section">
+      <p class="eyebrow">My Skills</p>
+      <h2 class="skills-title">My Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h4>HTML</h4>
+          <p>Structuring clean, semantic web pages that are easy to read and maintain.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h4>CSS</h4>
+          <p>Styling responsive layouts using flexbox, grid, and smooth animations.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h4>JavaScript</h4>
+          <p>Adding interactivity, form handling, and dynamic behavior to pages.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐘</div>
+          <h4>PHP</h4>
+          <p>Learning server-side scripting basics for forms and simple backend logic.</p>
+        </div>
+        <div class="info-cards">
+      <div class="info-card">
+        <span class="info-icon" aria-hidden="true">📧</span>
+        <div>
+          <p class="info-label">Gmail</p>
+          <p class="info-value">villocrisbrian5@.com</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <span class="info-icon" aria-hidden="true">📞</span>
+        <div>
+          <p class="info-label">Phone No.</p>
+          <p class="info-value">09701480943</p>
+        </div>
+      </div>
     </div>
-    <div class="gallery-item">
-      <img src="picture 2.webp" alt="Favorite place 2">
-      <p>Inferno Crater Lake, Waimangu</p>
+      </div>
     </div>
-    <div class="gallery-item">
-      <img src="picture 3.avif" alt="Favorite place 3">
-      <p>Cathedral Cove</p>
+  </section>
+
+  <section class="page" id="gallery">
+    <h3>Gallery</h3>
+    <p class="contact-sub">Favorite place in New Zealand.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="picture 1.jpg" alt="Favorite place 1">
+        <p>Hobbiton, Matamata</p>
+        <p>The Hobbit movies</p>
+      </div>
+      <div class="gallery-item">
+        <img src="picture 2.webp" alt="Favorite place 2">
+        <p>Inferno Crater Lake, Waimangu</p>
+      </div>
+      <div class="gallery-item">
+        <img src="picture 3.avif" alt="Favorite place 3">
+        <p>Cathedral Cove</p>
+      </div>
+      <div class="gallery-item">
+        <img src="picture 4.jpg" alt="Favorite place 4">
+        <p>Queenstown</p>
+      </div>
     </div>
-    <div class="gallery-item">
-      <img src="picture 4.jpg" alt="Favorite place 4">
-      <p>Queenstown</p>
-    </div>
-  </div>
-</section>
-  
+  </section>
+
   <section class="page" id="contact">
     <h2>Contact Me</h2>
-    <p class="contact-sub">You have a question? Just message me .</p>
-   <form id="contactForm" action="https://formspree.io/f/myegdgyo" method="POST">
+    <p class="contact-sub">You have a question? Just message me.</p>
+    <form id="contactForm" action="https://formspree.io/f/myegdgyo" method="POST">
       <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -80,16 +135,14 @@
       <p class="form-status" id="formStatus"></p>
     </form>
   </section>
-
 </main>
-  
+
 <div class="lightbox" id="lightbox">
   <span class="lightbox-close" id="lightboxClose">&times;</span>
   <img src="" alt="" id="lightboxImg">
   <p class="lightbox-caption" id="lightboxCaption"></p>
-  
 </div>
-  
+
 <script src="apps.js"></script>
 </body>
 </html>
