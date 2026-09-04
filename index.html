@@ -12,6 +12,7 @@
   <nav>
     <button class="nav-btn active" data-page="home">Home</button>
     <button class="nav-btn" data-page="about">About</button>
+    <button class="nav-btn" data-page="projects">Projects</button>
     <button class="nav-btn" data-page="gallery">Gallery</button>
     <button class="nav-btn" data-page="contact">Contact</button>
   </nav>
@@ -22,9 +23,16 @@
       <div class="hero-text">
         <span class="badge">Available for opportunities</span>
         <h1>Hi, I'm Cris Brian Villo <span class="wave">👋</span></h1>
+       
         <div class="hero-actions">
-          <button class="btn" data-goto="gallery">Explore Work</button>
+          <button class="btn" data-goto="projects">Explore Work</button>
           <button class="btn btn-outline" data-goto="contact">Let's Talk</button>
+        </div>
+        <div class="social-links">
+          <!-- TODO: palitan ng tunay na links mo -->
+          <a href="https://github.com/outbrian" target="_blank" rel="noopener" class="social-link">GitHub</a>
+          <a href="#" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+          <a href="resume.pdf" download class="social-link">Download Resume</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -32,9 +40,9 @@
         <div class="orbit-ring"></div>
         <div class="blob"></div>
         <div class="photo-frame">
-          <img src="Hobbit2.jpg" alt="Cris Brian Villo">
+          <img src="Hobbit2.jpg" alt="Cris Brian Villo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-fallback&quot;>CBV</div>'">
         </div>
-             </div>
+      </div>
     </div>
   </section>
 
@@ -45,7 +53,6 @@
       student at Central Philippines State University, San Carlos Campus. I study HTML,
       how the internet works, and how humans interact with computers.
     </p>
-    
 
     <div class="skills-section">
       <p class="eyebrow">My Skills</p>
@@ -71,22 +78,63 @@
           <h4>PHP</h4>
           <p>Learning server-side scripting basics for forms and simple backend logic.</p>
         </div>
-        <div class="info-cards">
-      <div class="info-card">
-        <span class="info-icon" aria-hidden="true">📧</span>
-        <div>
-          <p class="info-label">Gmail</p>
-          <p class="info-value">villocrisbrian5@.com</p>
-        </div>
       </div>
-      <div class="info-card">
-        <span class="info-icon" aria-hidden="true">📞</span>
-        <div>
-          <p class="info-label">Phone No.</p>
-          <p class="info-value">09701480943</p>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">📧</span>
+          <div>
+            <p class="info-label">Gmail</p>
+            <!-- TODO: kumpletuhin — kulang yung domain (halimbawa: @gmail.com) -->
+            <p class="info-value">villocrisbrian5@gmail.com</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">📞</span>
+          <div>
+            <p class="info-label">Phone No.</p>
+            <p class="info-value">09701480943</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="page" id="projects">
+    <h2>Projects</h2>
+    <p class="contact-sub">My personal projects while study web development.</p>
+    <div class="projects-grid">
+      <!-- TODO: Palitan ng totoong projects mo. Isa lang ito bilang template. -->
+      <div class="project-card">
+        <div class="project-thumb">💻</div>
+        <div class="project-body">
+          <h4>Portfolio</h4>
+        
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/outbrian/villo_portfolio/blob/main/index.html" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">📱</div>
+        <div class="project-body">
+          <h4>Database</h4>
+          <p>Store information. </p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -96,20 +144,20 @@
     <p class="contact-sub">Favorite place in New Zealand.</p>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="picture 1.jpg" alt="Favorite place 1">
+        <img src="picture 1.jpg" alt="Favorite place 1" onerror="this.onerror=null;this.src='picture 1.jpg'">
         <p>Hobbiton, Matamata</p>
         <p>The Hobbit movies</p>
       </div>
       <div class="gallery-item">
-        <img src="picture 2.webp" alt="Favorite place 2">
+        <img src="picture 2.webp" alt="Favorite place 2" onerror="this.onerror=null;this.src='picture 2.webp'">
         <p>Inferno Crater Lake, Waimangu</p>
       </div>
       <div class="gallery-item">
-        <img src="picture 3.avif" alt="Favorite place 3">
+        <img src="picture 3.avif" alt="Favorite place 3" onerror="this.onerror=null;this.src='picture 3.avif'">
         <p>Cathedral Cove</p>
       </div>
       <div class="gallery-item">
-        <img src="picture 4.jpg" alt="Favorite place 4">
+        <img src="picture 4.jpg" alt="Favorite place 4" onerror="this.onerror=null;this.src='picture 4.jpg'">
         <p>Queenstown</p>
       </div>
     </div>
