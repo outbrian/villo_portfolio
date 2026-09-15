@@ -573,3 +573,6 @@ textarea { min-height: 110px; resize: vertical; }
   .gallery-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
 }
+#profilePic {
+  transition: opacity 0.5s ease-in-out;
+}
