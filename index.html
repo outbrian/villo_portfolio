@@ -29,7 +29,7 @@
           <button class="btn btn-outline" data-goto="contact">Let's Talk</button>
         </div>
         <div class="social-links">
-          
+          <!-- TODO: palitan ng tunay na links mo -->
           <a href="https://github.com/outbrian" target="_blank" rel="noopener" class="social-link">GitHub</a>
           <a href="#" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
           <a href="resume.pdf" download class="social-link">Download Resume</a>
@@ -40,8 +40,24 @@
         <div class="orbit-ring"></div>
         <div class="blob"></div>
         <div class="photo-frame">
-          <img src="Hobbit2.jpg" alt="Cris Brian Villo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-fallback&quot;>CBV</div>'">
+<img id="profilePic" src="human.png" alt="Profile Picture">
         </div>
+        <script>
+  const images = [
+    "image1.png",
+    "image2.png",
+    "image3.png"
+    
+  ];
+
+  let currentIndex = 0;
+  const profilePic = document.getElementById("profilePic");
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    profilePic.src = images[currentIndex];
+  }, 3000); // 3000ms = 3 seconds
+</script>
       </div>
     </div>
   </section>
@@ -51,7 +67,7 @@
     <p class="about-text">
       Hi, I'm Cris Brian B. Villo, a Bachelor of Science in Information Technology (BSIT)
       student at Central Philippines State University, San Carlos Campus. I study HTML,
-      how the internet works, how humans interact with computers.
+      how the internet works, and how humans interact with computers.
     </p>
 
     <div class="skills-section">
@@ -85,7 +101,7 @@
           <span class="info-icon" aria-hidden="true">📧</span>
           <div>
             <p class="info-label">Gmail</p>
-            
+            <!-- TODO: kumpletuhin — kulang yung domain (halimbawa: @gmail.com) -->
             <p class="info-value">villocrisbrian5@gmail.com</p>
           </div>
         </div>
@@ -104,7 +120,7 @@
     <h2>Projects</h2>
     <p class="contact-sub">My personal projects while study web development.</p>
     <div class="projects-grid">
-      
+      <!-- TODO: Palitan ng totoong projects mo. Isa lang ito bilang template. -->
       <div class="project-card">
         <div class="project-thumb">💻</div>
         <div class="project-body">
@@ -124,7 +140,7 @@
       <div class="project-card">
         <div class="project-thumb">📱</div>
         <div class="project-body">
-       <h4>Mobile Application</h4>
+          <h4>Mobile Application</h4>
           <p>Earning apps </p>
           <div class="project-tags">
             <span class="tag">C++</span>
@@ -141,23 +157,23 @@
 
   <section class="page" id="gallery">
     <h3>Gallery</h3>
-    <p class="contact-sub">Favorite place.</p>
+    <p class="contact-sub">Favorite place in New Zealand.</p>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="picture 1.jpg" alt="Favorite place 1" onerror="this.onerror=null;this.src='picture 1.jpg'">
+        <img src="picture-1.jpg" alt="Favorite place 1" onerror="this.onerror=null;this.src='picture 1.jpg'">
         <p>Hobbiton, Matamata</p>
         <p>The Hobbit movies</p>
       </div>
       <div class="gallery-item">
-        <img src="picture 2.webp" alt="Favorite place 2" onerror="this.onerror=null;this.src='picture 2.webp'">
+        <img src="picture-2.webp" alt="Favorite place 2" onerror="this.onerror=null;this.src='picture 2.webp'">
         <p>Inferno Crater Lake, Waimangu</p>
       </div>
       <div class="gallery-item">
-        <img src="picture 3.avif" alt="Favorite place 3" onerror="this.onerror=null;this.src='picture 3.avif'">
+        <img src="picture-3.avif" alt="Favorite place 3" onerror="this.onerror=null;this.src='picture 3.avif'">
         <p>Cathedral Cove</p>
       </div>
       <div class="gallery-item">
-        <img src="picture 4.jpg" alt="Favorite place 4" onerror="this.onerror=null;this.src='picture 4.jpg'">
+        <img src="picture-4.jpg" alt="Favorite place 4" onerror="this.onerror=null;this.src='picture 4.jpg'">
         <p>Queenstown</p>
       </div>
     </div>
