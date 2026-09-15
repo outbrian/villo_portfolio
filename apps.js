@@ -50,3 +50,11 @@ lightbox.addEventListener('click', (e) => {
     lightbox.classList.remove('active');
   }
 });
+setInterval(() => {
+  profilePic.style.opacity = 0;
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    profilePic.src = images[currentIndex];
+    profilePic.style.opacity = 1;
+  }, 500);
+}, 3000);
